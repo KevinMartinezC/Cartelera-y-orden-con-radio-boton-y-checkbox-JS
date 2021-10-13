@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <title>Restaurante Salvadoreño</title>
+    <script type="text/javascript" src="js/ejercicio2.js"></script>
+    <link href="CSS/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body >
+    <div id="wrap">
+        <div id="checkbox-container">
+        <form action="" id="formulario" >
+            <div>
+            <div class="cont_order">
+               <fieldset>
+                <legend>Combos y productos</legend>
+                <label >Combos</label>
+                <label class='radiolabel'><input type="radio" class="datos"  name="Super Combo" value="7.25" />Super Combo ($7.25)</label><br/>
+                <label class='radiolabel'><input type="radio" class="datos" name="Combo Personal" value="5.75"/>Combo Personal($5.75)</label><br/>
+                <label class='radiolabel'><input type="radio"  class="datos" name="Combo Infantil" value="3.50"/>Combo Infantil($3.50)</label><br/>
+                <br/>
+                <legend>
+                    Productos
+                </legend>
+                <label>
+                    <input  value="1.50" type="checkbox" class="datos" name="Ensalada"/>
+                    Ensalada $1.50
+                </label>
+                <label>
+                    <input value="1.25" type="checkbox" class="datos"  name="Papa frita"/>
+                    Papa Frita $1.25
+                </label>
+                <label>
+                    <input  value="1.75" type="checkbox" class="datos"  name="Pienza de Pollo Grande"/>
+                    Pieza de Pollo Grande $1.75
+                </label>
+                <label>
+                    <input value="1.50" type="checkbox" class="datos" name="Pienza de Pollo mediana" />
+                    Pieza de pollo mediana $1.50
+                </label>
+                <label>
+                    <input value="1.25" type="checkbox" class="datos" name="Pieza de Pollo pequeña" />
+                    Pieza de pollo pequeña $1.25
+                </label>
+                <label>
+                    <input  value="1.50" type="checkbox" class="datos"  name="Bebida Grande"/>
+                    Bebida Grande $1.50
+                </label>
+                <label>
+                    <input  value="1.25" type="checkbox" class="datos" name="Bebida Mediana" />
+                    Bebida Mediana $1.25
+                </label>
+                <label>
+                    <input  value="1.00" type="checkbox" class="datos"  name="Bebida Pequeña"/>
+                    Bebida Pequeña $1.00
+                </label>
+                <label>
+                    <input value="0.50" type="checkbox" class="datos"  name="Café"/>
+                    Café $0.50
+                </label>
+                <label>
+                    <input  value="1.25" type="checkbox" class="datos"  name="Postre"/>
+                    Postre $1.25
+                </label>
+                <p>
+                <label class="inlinelabel" for='includeinscription'>  <label >Sugerencias</label>
+                <input type="text"  id="theinscription" name="theinscription" placeholder="Escriba su sugerencia"  />
+                </p>
+                <label>
+                    Total 
+                    <span class="recalculate-text text-right text-underline"></span>
+                </label>
+                <br>
+                <br>
+                <input type="button" id="add" value="Enviar">
+             </fieldset>
+            </div>
+        </div>  
+     </form>
+     <h3>Combos y productos comprados:</h3>
+     <div id="result"></div>
+     <br>
+     <div id="msj"></div>
+    </div>
+	</div>
+</body>
+</html>
